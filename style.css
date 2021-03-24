@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    flex: 1;
+}
+
+.LeftSide{
+    flex: 0.6;
+    position: relative;
+    min-height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.7)),url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2l0eXxlbnwwfHwwfA%3D%3D&w=1000&q=80)center/cover fixed no-repeat;
+}
+
+.LeftSide img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.LeftSide .LeftSideText {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LeftSide .LeftSideText .LeftSideTextContainer {
+    text-align: center;
+}
+
+.LeftSide .LeftSideText .LeftSideTextContainer .header{
+    font-weight: 500;
+    color: white;
+    font-size: 24px;
+}
+
+.LeftSide .LeftSideText .LeftSideTextContainer .subHeader{
+    color: white;
+    font-size: 21px;
+}
+
+.RightSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0.4;
+    width: 100%;
+    height: 100vh;
+}
+
+.RightSide .RightSideContainer{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+
+.RightSide .RightSideContainer .subText {
+    top: -200px;
+}
+
+.RightSide .RightSideContainer input {
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 5px;
+    border: 1.5px solid grey;
+}
+
+.RightSide .RightSideContainer h2 span{
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.9;
+    line-height: 20px;
+}
+
+.RightSide .RightSideContainer input:focus{
+    border-radius: 7px;
+    border: 1.5px solid #185091;
+}
+
+
+.RightSide .RightSideContainer .subFooter div input {
+    cursor: pointer;
+}
+
+
+.RightSide .RightSideContainer button {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #185091;
+    cursor: pointer;
+}
+
+.RightSide .RightSideContainer .subFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.RightSide .RightSideFooter {
+    position: absolute;
+    bottom: 20px;
+    text-decoration: underline;
+}
